@@ -19,7 +19,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(VTK REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system thread)
-find_package(OpenIGTLink REQUIRED)
+find_package(OpenIGTLink REQUIRED
+  PATHS ../OpenIGTLink-build
+)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
